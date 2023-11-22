@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>South Cote</title>
+    <link href='https://fonts.googleapis.com/css?family=Italianno' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+        <navbar>
+            <a href="index.html"><img class="navlogo" src="./resources/logo.svg" alt=""></a>
+            <div class="navLinks" id="navLinks">
+                <img src="./resources/close.svg" alt="" class="close" id="close-menu" onclick="hideMenu()">
+                <div class="nav-element" id="nav-ele">
+                    <li><a href="">Home</a></li>
+                    <li><a href="family.html">Family Home</a></li>
+                    <li><a href="">Rooms</a></li>
+                    <li><a href="">Tourist Attractions</a></li>
+                    <li><a href="">Books your Stay</a></li>
+                </div>
+            </div>
+            <img src="./resources/menu.svg" alt="" class="open" id="open-menu" onclick="openMenu()">
+        </navbar>
+
+<!-- 
+        <section class="main-section">
+            <div class="main-content">
+                <h3>Welcome to</h3>
+                <h1>South Cote</h1>
+
+            </div>
+        </section> -->
+    
+        <div class="section-1"><video autoplay muted loop id="myVideo">
+            <source src="./resources/rooms-video.mp4" type="video/mp4">
+          </video>
+            <div class="about-content">
+                <div class="main-content">
+                    <p> Welcome to </p>
+                    <h1>South Cote</h1>
+                    
+                </div>
+            </div>
+        </div>
+
+        <section class="about-section">
+            <div class="about-img">
+                <img src="./resources/img1.png" alt="">
+            </div>
+            <div class="abt-content">
+                <h1>South Cote - Family Home</h1>
+               
+                <p>Vivamus non porttitor magna, in scelerisque mauris. Duis mattis neque eget nibh auctor ultrices. Aenean vestibulum interdum fermentum. Integer interdum posuere sapien eu consectetur. In elementum, metus vitae porta efficitur, sapien purus suscipit nibh, nec efficitur sapien nulla ut orci. Duis convallis a ante consectetur blandit. Ut iaculis eros a sapien hendrerit, sit amet aliquam magna sodales. Vivamus rhoncus auctor augue, eu volutpat enim fringilla eget.
+                <a href=""><button>Read more</button></a>
+            </div>
+        </section>
+
+        <section class="custom-section">
+            <h1 class="custom">South Cote - Family Home</h1>
+            <p>Customize your Stay</p>
+            <div class="carousel-container">
+                <div class="carousel-inner" id="carousel">
+                  <div class="carousel-item"><img src="./resources/rooms-1.jpg" alt="Image 1"></div>
+                  <div class="carousel-item"><img src="./resources/rooms-2.jpg" alt="Image 2"></div>
+                  <div class="carousel-item"><img src="./resources/rooms-3.jpg" alt="Image 3"></div>
+                  <!-- Add more items as needed -->
+                </div>
+              </div>
+        </section>
+        <section class="custom-section">
+            <h1 class="custom">Gallery</h1>
+            <p > Good Times and Good Memories</p>
+            <div class="grid-container">
+                <a href=""> <img src="./resources/grid-1.png" alt=""></a>
+                <a href=""> <img src="./resources/grid-1.png" alt=""></a>
+                <a href=""> <img src="./resources/grid-1.png" alt=""></a>
+                <a href=""> <img src="./resources/grid-1.png" alt=""></a>
+                <a href=""> <img src="./resources/grid-1.png" alt=""></a>
+                <a href=""> <img src="./resources/grid-1.png" alt=""></a>
+                <a href=""> <img src="./resources/grid-1.png" alt=""></a>
+                <a href=""> <img src="./resources/grid-1.png" alt=""></a>
+                <a href=""> <img src="./resources/grid-1.png" alt=""></a>
+            </div>
+            <a href=""><button cl>Book Your Stay</button></a>
+        </section>
+        <section class="card-container">
+            <h1 class="custom">Testimonials</h1>
+            <p>what people say about us</p>
+            <div class="carousel-container-1">
+                <div class="carousel-inner-1" id="carousel-inner-1">
+                    <div class="carousel-item-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a euismod mauris, id viverra tellus. Mauris ultrices libero eu justo tempor accumsan. Nam vehicula ligula non sem vulputate vulputate. Sed eros neque, semper ut magna et, pretium luctus tortor. Fusce auctor congue nibh sed mollis. Vestibulum</div>
+                    <div class="carousel-item-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a euismod mauris, id viverra tellus. Mauris ultrices libero eu justo tempor accumsan. Nam vehicula ligula non sem vulputate vulputate. Sed eros neque, semper ut magna et, pretium luctus tortor. Fusce auctor congue nibh sed mollis. Vestibulum</div>
+                    <div class="carousel-item-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a euismod mauris, id viverra tellus. Mauris ultrices libero eu justo tempor accumsan. Nam vehicula ligula non sem vulputate vulputate. Sed eros neque, semper ut magna et, pretium luctus tortor. Fusce auctor congue nibh sed mollis. Vestibulum</div>
+                    <!-- Add more slides as needed -->
+                </div>
+                <div class="carousel-btn prev-btn" onclick="prevSlide()"><img src="./resources/left.svg" alt=""></div>
+                <div class="carousel-btn next-btn" onclick="nextSlide()"><img src="./resources/right.svg" alt=""></div>
+                <!-- <button class="carousel-btn prev-btn" onclick="prevSlide()">Previous</button>
+                <button class="carousel-btn next-btn" onclick="nextSlide()">Next</button> -->
+            </div>
+        </section>
+        <section class="attraction-container">
+            <h1 class="custom">Tourist Atractions</h1>
+            <p>Heritage</p>
+            <div class="tile-container">
+                <a href="" class="tile">
+                    <img src="./resources/tourist-1.png" alt="">
+                    <h1 >Mysore Palace</h1>
+                    <p>Location</p>
+                </a>
+                <a href="" class="tile">
+                    <img src="./resources/tourist-1.png" alt="">
+                    <h1 >KRS Brindavan Garden</h1>
+                    <p>Location</p>
+                </a>
+                <a href="" class="tile">
+                    <img src="./resources/tourist-1.png" alt="">
+                    <h1 >Chamundi Hills</h1>
+                    <p>Location</p>
+                </a>
+
+            </div>
+
+        </section>
+        <footer>
+            <h1 class="">South Cote</h1>
+            <div class="footer-container">
+                <div class="footer-card">
+                    <h1>Tourist Attractions</h1>
+                    <li><a href="">Mysore Palace</a></li>
+                    <li><a href="">Brundavan Garden</a></li>
+                    <li><a href="">Chamundi Hills</a></li>
+                    <li><a href="">Zoo</a></li>
+                    <li><a href="">Sri Ranga Patna</a></li>
+                </div>
+                <div class="footer-card">
+                    <h1>Family Rooms Types</h1>
+                    <li><a href="">type 1</a></li>
+                    <li><a href="">type 2</a></li>
+                    <li><a href="">type 3</a></li>
+                </div>
+                <div class="footer-card">
+                    <h1>Contact</h1>
+                    <li><a href="">+91 1234567890</a></li>
+                    <li><a href="">email.com</a></li>
+                    <li><a href="">Location</a></li>
+                </div>
+            </div>
+        </footer>
+        <section class="final-footer">Copyright © 2023 <b>South Cote</b> South Cote. All rights reserved. Design and Developed by <b> <u> The One Solution</u></b></section>
+
+    </main>
+	<script src="index.js"></script>
+  </body>
+</html>
