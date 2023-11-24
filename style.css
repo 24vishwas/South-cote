@@ -571,6 +571,7 @@ footer{
     height: auto;
     padding-top: 30px;
     position: relative;
+    margin-top: 5%;
 }
 footer>h1{
     font-size: 50px;
