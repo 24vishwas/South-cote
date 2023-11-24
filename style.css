@@ -72,17 +72,16 @@ navbar{
     padding-left: 50px;
 }
 .close{
-    width: 15px;
-}
-.open{
-    width: 20px;
-}
-.open{
+    /* width: 15px; */
+    height: auto;
     display: none;
 }
-.close{
+.open{
+    /* width: 20px; */
+    height: auto;
     display: none;
 }
+
 @media screen and (max-width: 1060px) and (min-width: 1025px) {
     
     .navLinks {
@@ -97,7 +96,7 @@ navbar{
         background:#4C5434;
         flex-direction: column;
         justify-content: flex-start;
-        padding: min(30vh,3rem) 0em;
+        padding: min(12vh,10rem) 0em;
         align-items: flex-start;
         transform: translateX(100%);
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -111,8 +110,8 @@ navbar{
         /* background-color: brown; */
         z-index: 2;
         position: absolute;
-        width: 2rem;
-        top: 0.5rem;
+        width: 1.3rem;
+        top: 1rem;
         right: 1rem;
     }
 
@@ -121,8 +120,8 @@ navbar{
         /* background-color: brown; */
         z-index: 2;
         position: absolute;
-        width: 40px;
-        /* top: 2rem; */
+        width: 1.3rem;
+        top: 1rem;
         right: 1rem;
     }
 }
