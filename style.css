@@ -400,7 +400,7 @@ section {
 .custom-section a>button{
     /* font-size: 30px; */
     margin-top: 30px;
-    padding: 10px 35px;
+    padding: 10px 25px;
     text-decoration: none;
     border: 0;
     background: #4C5434;
@@ -478,6 +478,8 @@ section {
     transition: background-color 0.3s ease;
     position: absolute;
     top: 60%;
+    width: auto;
+    height: auto;
     transform: translateY(-50%);
 }
 
@@ -488,6 +490,8 @@ section {
 
 .prev-btn {
     left: 0;
+   
+
 }
 
 .next-btn {
