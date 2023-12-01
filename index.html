@@ -13,15 +13,15 @@
   <body>
     <main>
         <navbar>
-            <a href="index.html"><img class="navlogo" src="./resources/logo.svg" alt=""></a>
+            <a href="index.html" class="navlogo">SouthCote</a>
             <div class="navLinks" id="navLinks">
                 <img src="./resources/close.svg" alt="" class="close" id="close-menu" onclick="hideMenu()">
                 <div class="nav-element" id="nav-ele">
-                    <li><a href="">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="family.html">Family Home</a></li>
-                    <li><a href="">Rooms</a></li>
-                    <li><a href="">Tourist Attractions</a></li>
-                    <li><a href="">Books your Stay</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#attraction">Tourist Attractions</a></li>
+                    <li><a href="#gallery">Books your Stay</a></li>
                 </div>
             </div>
             <img src="./resources/menu.svg" alt="" class="open" id="open-menu" onclick="openMenu()">
@@ -36,32 +36,36 @@
             </div>
         </section> -->
     
-        <div class="section-1"><video autoplay muted loop id="myVideo">
+        <div class="section-1" id="home">
+            <video autoplay muted loop id="myVideo">
             <source src="./resources/rooms-video.mp4" type="video/mp4">
           </video>
             <div class="about-content">
                 <div class="main-content">
                     <p> Welcome to </p>
                     <h1>South Cote</h1>
+                    <a href="#about"><button >Explore</button></a>
                     
                 </div>
             </div>
         </div>
 
-        <section class="about-section">
+        <section class="about-section" id="about">
             <div class="about-img">
                 <img src="./resources/img1.webp" alt="image section">
             </div>
             <div class="abt-content">
                 <h1>South Cote - Family Home</h1>
                
-                <p>Vivamus non porttitor magna, in scelerisque mauris. Duis mattis neque eget nibh auctor ultrices. Aenean vestibulum interdum fermentum. Integer interdum posuere sapien eu consectetur. In elementum, metus vitae porta efficitur, sapien purus suscipit nibh, nec efficitur sapien nulla ut orci. Duis convallis a ante consectetur blandit. Ut iaculis eros a sapien hendrerit, sit amet aliquam magna sodales. Vivamus rhoncus auctor augue, eu volutpat enim fringilla eget.
-                <a href="family.html"><button>Read more</button></a>
+                <p>
+                    Nestled in the heart of Mysore, South Cote offers a unique blend of traditional hospitality and modern comfort, designed for families. Our home is more than just a stay; it's an experience where every detail is tailored to your needs. Whether you're looking to indulge in local cuisine prepared by us or wish to cook a family meal in our optional kitchen setups, we have you covered. At SouthCote, we believe in creating memories. Spend evenings by our bonfire, sharing stories under the stars, or explore the rich culture of Mysore with a personalized tourist guide service. We accommodate not just your family, but also your vehicles, with ample parking for buses and cars. Discover the charm of Mysore with us!
+                </p>
+                <!-- <a href="family.html"><button>Read more</button></a> -->
             </div>
         </section>
 
-        <section class="custom-section">
-            <h1 class="custom">South Cote - Family Home</h1>
+        <section class="custom-section" id="rooms">
+            <h1 class="custom">Your Comfort, Our Priority</h1>
             <p>Customize your Stay</p>
             <div class="carousel-container">
                 <div class="carousel-inner" id="carousel">
@@ -72,7 +76,7 @@
                 <a href="family.html"><button >Customise Rooms</button></a>
               </div>
         </section>
-        <section class="custom-section">
+        <section class="custom-section" id="gallery">
             <h1 class="custom">Gallery</h1>
             <p > Good Times and Good Memories</p>
             <div class="grid-container">
@@ -104,22 +108,22 @@
                 <button class="carousel-btn next-btn" onclick="nextSlide()">Next</button> -->
             </div>
         </section>
-        <section class="attraction-container">
+        <section class="attraction-container" id="attraction">
             <h1 class="custom">Tourist Atractions</h1>
             <p>Heritage</p>
             <div class="tile-container">
-                <a href="" class="tile">
-                    <img src="./resources/tourist-1.webp" alt="image">
+                <a href="https://maps.app.goo.gl/uuJPzjXupJ2FTWEP9" class="tile">
+                    <img src="./resources/palace_50.webp" alt="image">
                     <h1 >Mysore Palace</h1>
                     <p>Location</p>
                 </a>
-                <a href="" class="tile">
-                    <img src="./resources/tourist-1.webp" alt="image">
+                <a href="https://maps.app.goo.gl/MUu2iuZHqbinQgvq8" class="tile">
+                    <img src="./resources/brundavan_412x232.webp" alt="image">
                     <h1 >KRS Brindavan Garden</h1>
                     <p>Location</p>
                 </a>
-                <a href="" class="tile">
-                    <img src="./resources/tourist-1.webp" alt="image">
+                <a href="https://maps.app.goo.gl/wSSxypAfZq6UpXFYA" class="tile">
+                    <img src="./resources/chamundi hills.webp" alt="image">
                     <h1 >Chamundi Hills</h1>
                     <p>Location</p>
                 </a>
@@ -132,11 +136,12 @@
             <div class="footer-container">
                 <div class="footer-card">
                     <h1>Tourist Attractions</h1>
-                    <li><a href="">Mysore Palace</a></li>
-                    <li><a href="">Brundavan Garden</a></li>
-                    <li><a href="">Chamundi Hills</a></li>
-                    <li><a href="">Zoo</a></li>
-                    <li><a href="">Sri Ranga Patna</a></li>
+                    <li><a href="https://maps.app.goo.gl/uuJPzjXupJ2FTWEP9">
+                        Mysore Palace</a></li>
+                    <li><a href="https://maps.app.goo.gl/MUu2iuZHqbinQgvq8">Brundavan Garden</a></li>
+                    <li><a href="https://maps.app.goo.gl/wSSxypAfZq6UpXFYA">Chamundi Hills</a></li>
+                    <li><a href="https://maps.app.goo.gl/c1Zj9e9M2B6zdTkPA">Zoo</a></li>
+                    <li><a href="https://maps.app.goo.gl/5xD9fYU9fBDe7uJm7">Sri Ranga Patna</a></li>
                 </div>
                 <div class="footer-card">
                     <h1>Family Rooms Types</h1>

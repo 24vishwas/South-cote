@@ -2,12 +2,13 @@ body{
     margin: 0;
     padding: 0;
     border: 0;
+
     
 }
 *{
     font-family: 'Italianno';
     font-size: x-large;
-    
+    /* overflow: hidden; */
 }
 
 navbar{
@@ -21,7 +22,7 @@ navbar{
     align-items: center;
     z-index: 3;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    /* overflow-x: hidden; */
+    /* overflow: hidden; */
     
 }
 
@@ -67,9 +68,12 @@ navbar{
     
 }
 .navlogo{
-    width: 70px;
-    padding: 25px;
+    /* width: 70px; */
+    /* padding: 25px; */
     padding-left: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 42px;
 }
 .close{
     /* width: 15px; */
@@ -126,7 +130,7 @@ navbar{
     }
 }
 .main-section{
-    height: 90vh;
+    height: 600px;
     background-image: url(./resources/main-img.jfif);
     background-size: 100% auto;
     
@@ -147,7 +151,10 @@ section{
   }
 .section-1{
     /* margin-top: 5%; */
-    height:100vh
+    height: 100vh;
+    height:100svh;
+    overflow:hidden;
+
     
 }
 
@@ -173,10 +180,11 @@ section{
 }
 .section-main{
     background-image:linear-gradient(270deg, rgba(0, 0, 0, 0.271) 28.91%, #00000042 100%),
-    url(./resources/main-img.jfif);
+    url(./resources/main-img.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 600px;
 }
 
 
@@ -190,12 +198,33 @@ section{
     font-size: 6vw;
     color: #FFCD4B;
     font-weight: 400;
-    margin-top: 0;
+    margin: 0;
 }
 
 .main-content p{
     font-size: 130%;
     
+}
+.main-content a>button{
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 10px 35px;
+    text-decoration: none;
+    border: 0;
+    background: #4C5434;
+    color: white;
+    border-radius: 22px 0px;
+    transition: .3s ease;
+    width: 200px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+
+.main-content a>button:hover {
+    background-color: #ffffffda;
+    color: #4C5434;
+    border: 2px solid #4C5434;
+    transition: .3s ease;
 }
 
 
@@ -225,6 +254,7 @@ section{
         
         align-items: center;
         row-gap: 30px;
+        margin-block: 15%;
         
         
     }
@@ -239,7 +269,8 @@ section {
 .about-section{
     display: flex;
     justify-content: space-between;
-    margin: 10% 0 ;
+    /* margin: 10% 0 ; */
+    /* margin-bottom: 0; */
   }
 
 .abt-content{
@@ -303,6 +334,9 @@ section {
         
         
     }
+    .custom-section{
+        margin-block: 15%;
+    }
 .abt-content{
     width: 90%;
     text-align: center;
@@ -326,11 +360,12 @@ section {
     }
   }
 
+
   .custom{
     font-size: 60px;
     font-weight: 400;
     color: #4C5434;
-    margin-bottom: 0;
+    margin: 0;
   }
   .custom-section p{
     font-size: 35px;
@@ -359,7 +394,9 @@ section {
     width: 100%;
     height: auto;
   }
-  
+  .custom-section1{
+    margin-inline: auto;
+  }
 
 @media (max-width:800px){
     .carousel-container{
@@ -367,7 +404,7 @@ section {
     }
     .custom-section{
         width: 90%;
-        margin: auto;
+        margin-inline: auto;
     }
     .custom{
         font-size: 50px;
@@ -429,6 +466,7 @@ section {
     /* width: 95%; */
     margin-left: auto;
     margin-right: auto;
+    /* margin-block: 5%; */
 }
 
 .card-container p{
@@ -505,6 +543,7 @@ section {
     .card-container{
         width: 90%;
         height: auto;
+        margin-block: 15%;
     }
 }
 a{
@@ -529,6 +568,9 @@ a{
 .tile{
     text-align: center;
     color: black;
+    /* width: 30.3333%; */
+    height: auto;
+    max-width: 450px;
 
 }
 
@@ -545,9 +587,13 @@ a{
     margin: 0;
 }
 .tile img{
+    /* width: 700px; */
+    height: 250px;
     width: 100%;
-    height: auto;
-    object-fit: contain;
+
+    /* height: 100%; */
+    object-fit: cover;
+    object-position: center;
 }
 
 @media (max-width:800px){
@@ -560,7 +606,7 @@ a{
 
 footer{
     /* font-family: initial;*/
-    background-image: url(./resources/footer.png);
+    background-image: url(./resources/footer.webp);
     /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
@@ -641,11 +687,22 @@ footer>h1{
     font-family: 'Montserrat';
     font-size: initial;
 }
+.container-carousel h4{
+    font-size: 35px;
+    color: #81A717;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.container-carousel p{
+    font-family: 'Montserrat';
+    font-size: initial;
+}
 
 .container-carousel a>button{
   
         /* font-size: 30px; */
-        margin-top: 30px;
+        /* margin-top: 10px; */
         padding: 6px 35px;
         text-decoration: none;
         border: 0;
@@ -654,6 +711,8 @@ footer>h1{
         border-radius: 22px 0px;
         transition: .3s ease;
         width: 200px;
+        font-family: initial;
+        font-size: initial;
     }
     
     .container-carousel a>button:hover {
@@ -664,8 +723,13 @@ footer>h1{
     }
 
     .container-carousel a{
-        display: block;
+        /* display: block; */
+        /* object-position: center; */
         text-align: center;
+    }
+    .btn-container{
+        display: grid;
+        margin-bottom: 5%;
     }
 @media (max-width:800px){
     .container-carousel{
@@ -675,9 +739,26 @@ footer>h1{
         margin-right: auto;
         margin-left: auto;
     }
+    .container-carousel p{
+        font-size: 16px;
+    }
 }
 .amenities-section{
     text-align: center;
+}
+@media (max-width:800px) {
+    .amenities-section{
+        margin-top: 10%;
+        width: 90%;
+        margin-inline: auto;
+    }
+}
+.amenities-section >p{
+    font-size: 35px;
+    color: #81A717;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .amenities-grid{
     display: flex;
@@ -687,16 +768,22 @@ footer>h1{
     justify-content: center;
     gap: 50px;
 }
+@media (max-width:800px) {
+    .amenities-grid{
+        gap:20px
+    }
+}
 
 .amenities-tile{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 450px;
     height: auto;
 }
 .amenities-tile img{
-    max-width: 100px;
+    max-width: 60px;
     width: 100%;
     height: auto;
 }
