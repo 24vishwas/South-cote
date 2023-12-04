@@ -815,11 +815,11 @@ box-shadow: 23px 26px 39px -5px rgba(0,0,0,0.4);
 
 .card-item h1{
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 10%;
     color: white;
     font-weight: 600;
-    font-size:50px ;
+    font-size:40px ;
     font-family: "Montserrat";
 }
 @media (max-width:800px) {
@@ -828,7 +828,8 @@ box-shadow: 23px 26px 39px -5px rgba(0,0,0,0.4);
         margin-inline: auto;
     }
     .card-item h1{
-        font-size:40px ;
+        font-size:30px ;
+        top: 50%;
     }
 }
 @media (max-width:500px) {
