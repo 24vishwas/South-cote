@@ -435,9 +435,11 @@ section {
     width: 100%;
     object-fit: cover;
 }
-.custom-section a{
+.custom-section > a{
     display: block;
+    width: fit-content;
     text-align: center;
+    margin-inline: auto;
 }
 .custom-section a>button{
     /* font-size: 30px; */
@@ -501,7 +503,7 @@ section {
     flex: 0 0 100%;
     box-sizing: border-box;
     padding: 20px;
-    text-align: center;
+    text-align: justify;
     background-color: #fff;
     border-radius: 8px;
     font-family: 'Montserrat';
@@ -882,6 +884,19 @@ box-shadow: 23px 26px 39px -5px rgba(0,0,0,0.4); */
     margin-bottom: 0;
 
 } 
+.furnished > a{
+    display: block;
+    width: fit-content;
+    text-align: center;
+    margin-inline: auto;
+}
+.btn-container > a{
+    display: block;
+    width: fit-content;
+    text-align: center;
+    margin-inline: auto;
+    /* height: min-content; */
+}
 
 
 .celebration-container{
@@ -891,6 +906,28 @@ margin-inline: auto;
     width: 100%;
     height: auto;
 }
+.celebration-section a{
+    margin-inline: auto;
+    text-align: center;
+    display: block;
+    width: fit-content;
+    /* transform: translateX(300%); */
+}
+.celebration-section a>button{
+    /* font-size: 30px; */
+    margin-top: 30px;
+    padding: 10px 25px;
+    text-decoration: none;
+    border: 0;
+    background: #4C5434;
+    color: white;
+    border-radius: 22px 0px;
+    transition: .3s ease;
+    width: 200px;
+    font-family: 'Montserrat';
+    font-size: initial;
+}
+
 
 @media (max-width:800px) {
     .celebration-section{
@@ -907,3 +944,42 @@ a{
     text-decoration: none;
     color: inherit;
 }
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 5%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lightbox img {
+    max-width: 80%;
+    max-height: 80%;
+  }
+   .close-icon {
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    color: #fff;
+    font-size: 34px;
+    cursor: pointer;
+    /* background-color: blue; */
+  }
+  body.lightbox-open {
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  /* Media queries for responsiveness */
+  @media (max-width: 600px) {
+    
+    .lightbox img{
+      max-width: 95%;
+        max-height: auto;
+    }
+  }

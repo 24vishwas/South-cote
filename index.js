@@ -101,3 +101,20 @@ let crntIndex = 0;
             },
           },
       });
+
+
+
+      function openLightbox(event, element) {
+        event.preventDefault();
+        document.body.classList.add('lightbox-open');
+        var lightbox = document.getElementById('lightbox');
+        var lightboxImg = document.getElementById('lightbox-img');
+    
+        lightboxImg.src = element.href;
+        lightbox.style.display = 'flex';
+      }
+    
+      function closeLightbox() {
+        document.body.classList.remove('lightbox-open');
+        document.getElementById('lightbox').style.display = 'none';
+      }

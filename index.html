@@ -20,10 +20,10 @@
                 <img src="./resources/close.svg" alt="" class="close" id="close-menu" onclick="hideMenu()">
                 <div class="nav-element" id="nav-ele">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#home">Family Home</a></li>
+                    <li><a href="#about">Family Home</a></li>
                     <li><a href="#rooms">Rooms</a></li>
                     <li><a href="#attraction">Tourist Attractions</a></li>
-                    <li><a href="#gallery">Books your Stay</a></li>
+                    <li><a href="tel:+919945007030">Books your Stay</a></li>
                 </div>
             </div>
             <img src="./resources/menu.svg" alt="" class="open" id="open-menu" onclick="openMenu()">
@@ -54,6 +54,7 @@
                 <p>
                     Nestled in the heart of Mysore, South Cote offers a unique blend of traditional hospitality and modern comfort, designed for families. Our home is more than just a stay; it's an experience where every detail is tailored to your needs. Whether you're looking to indulge in local cuisine prepared by us or wish to cook a family meal in our optional kitchen setups, we have you covered. At SouthCote, we believe in creating memories. Spend evenings by our bonfire, sharing stories under the stars, or explore the rich culture of Mysore with a personalized tourist guide service. We accommodate not just your family, but also your vehicles, with ample parking for buses and cars. Discover the charm of Mysore with us!
                 </p>
+                <p>SouthCote, located near Mysore, provides easy access to the city's attractions. Our tranquil abode offers a perfect base for exploring and enjoying the rich culture of Mysore.</p>
                 <!-- <a href="family.html"><button>Read more</button></a> -->
             </div>
         </section>
@@ -70,7 +71,7 @@
                   <div class="carousel-item"><img src="./resources/south-cote-restroom-facility-at-night.webp" alt="Image 3"></div>
                   <div class="carousel-item"><img src="./resources/south-cote-restroom-facility.webp" alt="Image 3"></div>
                 </div>
-                <a href="family.html"><button >Customise Rooms</button></a>
+                <!-- <a href="family.html"><button >Customise Rooms</button></a> -->
               </div>
               <div class="rooms-container">
                 <div class="furnished">
@@ -78,7 +79,7 @@
                         <p>Embrace the coziness of our furnished family rooms, where every element is crafted for comfort. Equipped with modern amenities and a touch of local décor, these rooms are perfect for families seeking a hassle-free stay.</p>
                         <div class="btn-container">
                           
-                          <a href=""><button cl>Call Now</button></a>
+                          <a href="tel:+919945007030"><button cl>Call Now</button></a>
                         </div>
                       </div>
                       <div class="unfurnishied">   
@@ -86,7 +87,7 @@
                         <p>For those who love to personalize their space, our unfurnished family rooms offer a blank canvas. Spacious and versatile, these rooms provide the freedom to set up your temporary home just the way you like it.</p>
                         <div class="btn-container">
                           
-                          <a href=""><button cl>Book Your Stay</button></a>
+                          <a href="tel:+919945007030"><button cl>Call Now</button></a>
                         </div>
                       </div>
                     </div>
@@ -133,6 +134,7 @@
                 <img src="./resources/south-cote-photos-08.webp" alt="">
 
             </div>
+            <a href="tel:+919945007030"><button cl>Book Your Celebrations</button></a>
           </section>
 
 
@@ -140,17 +142,23 @@
             <h1 class="custom">Gallery</h1>
             <p > Good Times and Good Memories</p>
             <div class="grid-container">
-                <a href=""> <img src="./resources/south-cote-bonfire.webp" alt="gallery image"></a>
-                <a href=""> <img src="./resources/south-cote.webp" alt="gallery image"></a>
-                <a href=""> <img src="./resources/south-cote-enterance.webp" alt="gallery image"></a>
-                <a href=""> <img src="./resources/southcote-entarance.webp" alt="gallery image"></a>
-                <a href=""> <img src="./resources/south-cote-parking.webp" alt="gallery image"></a>
-                <a href=""> <img src="./resources/rooms-3.webp" alt="gallery image"></a>
+              <a href="./resources/south-cote-bonfire.webp" onclick="openLightbox(event, this)"><img src="./resources/south-cote-bonfire.webp" alt="gallery image"></a>
+              <a href="./resources/south-cote.webp" onclick="openLightbox(event, this)"><img src="./resources/south-cote.webp" alt="gallery image"></a>
+              <a href="./resources/south-cote-enterance.webp" onclick="openLightbox(event, this)"><img src="./resources/south-cote-enterance.webp" alt="gallery image"></a>
+              <a href="./resources/southcote-entarance.webp" onclick="openLightbox(event, this)"><img src="./resources/southcote-entarance.webp" alt="gallery image"></a>
+              <a href="./resources/south-cote-parking.webp" onclick="openLightbox(event, this)"><img src="./resources/south-cote-parking.webp" alt="gallery image"></a>
+              <a href="./resources/rooms-3.webp" onclick="openLightbox(event, this)"><img src="./resources/rooms-3.webp" alt="gallery image"></a>
                 <!-- <a href=""> <img src="./resources/grid-1.webp" alt="gallery image"></a>
                 <a href=""> <img src="./resources/grid-1.webp" alt="gallery image"></a>
                 <a href=""> <img src="./resources/grid-1.webp" alt="gallery image"></a> -->
             </div>
-            <a href=""><button cl>Book Your Stay</button></a>
+            <a href="tel:+919945007030"><button cl>Book Your Stay</button></a>
+
+            <div id="lightbox" class="lightbox">
+              <span class="close-icon" onclick="closeLightbox()">&#10006;</span>
+              <img id="lightbox-img" src="" alt="lightbox image">
+          </div>
+          
         </section>
 
         <section class="additional-section">
@@ -191,9 +199,9 @@
             <p>what people say about us</p>
             <div class="carousel-container-1">
                 <div class="carousel-inner-1" id="carousel-inner-1">
-                    <div class="carousel-item-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a euismod mauris, id viverra tellus. Mauris ultrices libero eu justo tempor accumsan. Nam vehicula ligula non sem vulputate vulputate. Sed eros neque, semper ut magna et, pretium luctus tortor. Fusce auctor congue nibh sed mollis. Vestibulum</div>
-                    <div class="carousel-item-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a euismod mauris, id viverra tellus. Mauris ultrices libero eu justo tempor accumsan. Nam vehicula ligula non sem vulputate vulputate. Sed eros neque, semper ut magna et, pretium luctus tortor. Fusce auctor congue nibh sed mollis. Vestibulum</div>
-                    <div class="carousel-item-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a euismod mauris, id viverra tellus. Mauris ultrices libero eu justo tempor accumsan. Nam vehicula ligula non sem vulputate vulputate. Sed eros neque, semper ut magna et, pretium luctus tortor. Fusce auctor congue nibh sed mollis. Vestibulum</div>
+                    <div class="carousel-item-1">Our family's stay at South Cote was nothing short of magical. From the moment we arrived, we were greeted with warm hospitality and a sense of belonging. The furnished family room was a cozy haven, blending comfort with a touch of local charm. The bonfire evenings brought our family closer, creating memories we'll cherish forever. South Cote isn't just a place to stay; it's a home away from home.</div>
+                    <div class="carousel-item-1">As a travel enthusiast, I've stayed in many places, but South Cote stands out for its exceptional service and unique experiences. The optional kitchen setup was perfect for when we wanted a home-cooked meal. The highlight of our trip was the personalized tour of Mysuru, thanks to the knowledgeable guide arranged by South Cote. It's not just a stay; it's an immersive cultural journey.</div>
+                    <div class="carousel-item-1">We chose the unfurnished family room at South Cote, and it was the best decision for our long stay. The flexibility to personalize our space made it feel like our own. The staff's attention to detail and willingness to accommodate all our needs was remarkable. The serene bonfire nights and the convenient parking for our bus made our stay both enjoyable and hassle-free. South Cote is truly a gem in Mysuru.</div>
                     <!-- Add more slides as needed -->
                 </div>
                 <div class="carousel-btn prev-btn" onclick="prevSlide()"><img src="./resources/left.svg" alt="Previous button"></div>
